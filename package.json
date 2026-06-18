@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "<<<<<<< Next.js": "",
-    "dev": "bun scripts:check-app-env && next dev | pino-pretty --colorize",
-    "build": "next build --webpack",
-    "start": "next start | pino-pretty --colorize",
+    "dev": "node init && bun scripts:check-app-env && next dev | pino-pretty --colorize",
+    "build": "node init && next build --webpack",
+    "start": "node init && next start | pino-pretty --colorize",
     "preview": "next build --webpack && next start | pino-pretty --colorize",
     "lint": "biome lint .",
     "lint:fix": "biome lint --write .",
